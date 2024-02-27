@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TEST YOUR KNOWLEDGE - Christopher Nolan's Gallery</title>
+    <link rel="stylesheet" href="nolan_styles.css">    <!-- link to css file --> 
+</head>
+<body>
+    <header>
+        <h1>TEST YOUR KNOWLEDGRE </h1>      <!-- The title of the page -->
+    </header>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>               <!-- Navegation sidebar which contains links to all pages -->
+                <ul>            <!-- I created a sidebar so it can be easy to navegate the website -->
+                    <li><a href="chris.html">HOME</a></li>
+                    <li><a href="interstellar.html">INTERSTELLAR</a></li>
+                    <li><a href="the_dark_knight.html">THE DARK KNIGHT</a></li>
+                    <li><a href="inception.html">INCEPTION</a></li>
+                    <li><a href="oppenhimer.html">OPPENHEIMER</a></li>                    
+                    <li><a href="review.html">REVIEWS</a></li>
+                    <li><a href="quizzes.html">TEST YOUR KNOWLEDGE</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="quiz-section">
+            <form action="submit_quiz.php" method="POST"> <!-- create a form for submitting the aswers to the quiz -->
+                <div class="question">
+                    <p>Question 1: In "Inception," how do characters distinguish the dream world from reality?</p>
+                    <div class="options"> <!-- create a question with four option tybe radio-->
+                        <label><input type="radio" name="question1" value="A"> Totam </label>
+                        <label><input type="radio" name="question1" value="B"> A piece of glass </label>
+                        <label><input type="radio" name="question1" value="C"> Candle </label>
+                        <label><input type="radio" name="question1" value="D"> A rare stone</label>
+                    </div>
+                </div>
+                <div class="question">  <!-- create a question with four option tybe radio-->
+                    <p>Question 2: What is the central theme of "The Prestige"?</p>
+                    <div class="options">
+                        <label><input type="radio" name="question2" value="A"> Time travel </label>
+                        <label><input type="radio" name="question2" value="B"> Dreams exploration </label>
+                        <label><input type="radio" name="question2" value="C"> Magic </label>
+                        <label><input type="radio" name="question2" value="D"> The second world war </label>
+                    </div>
+                </div>
+                <div class="question">  <!-- create a question with four option type radio-->
+                    <p>Question 3: What unique narrative structure is used in "Memento"?</p>
+                    <div class="options">
+                        <label><input type="radio" name="question3" value="A"> The story is told in reverse chronological order </label>
+                        <label><input type="radio" name="question3" value="B"> The story is told from multiple perspectives </label>
+                        <label><input type="radio" name="question3" value="C"> The story is split into two parallel timelines </label>
+                        <label><input type="radio" name="question3" value="D"> The story unfolds in a single continuous shot </label>
+                    </div>
+                </div>
+                <div class="question">  <!-- create a question with four option type radio-->
+                    <p>Question 4: In "Interstellar," what is the name of the robot assistant that accompanies the astronauts? </p>
+                    <div class="options">
+                        <label><input type="radio" name="question4" value="A"> Bat </label>
+                        <label><input type="radio" name="question4" value="B"> x-305 </label>
+                        <label><input type="radio" name="question4" value="C"> TARS </label>
+                        <label><input type="radio" name="question4" value="D"> ROBOT-SPACE </label>
+                    </div>
+                </div>
+                <button type="submit">Submit Answers</button> <!-- create a button to submit all answers-->
+            </form>
+        </main>
+    </div>
+    <footer>
+        <div class="social-media">      <!-- this section is for the copyright and social media accounnts, I didn't provide an actual account because I don't have one -->
+            <h4>Follow us on</h4>
+            <a href="https://X.com/x" target="_blank" aria-label="X">   <!-- link to X account -->
+                <img src="twitter-icon.png" alt="X aka twitter-icon">
+            </a>
+            <a href="https://instagram.com/x" target="_blank" aria-label="Instagram">   <!-- link to Instegram account -->
+                <img src="instagram-icon.png" alt="Instagram icon">
+            </a>
+            <a href="https://facebook.com/x" target="_blank" aria-label="Facebook">     <!-- link to Facebook account -->
+                <img src="facebook-icon.png" alt="Facebook icon">
+            </a>
+        </div>
+        <p>&copy; 2024 REEM. All rights reserved.</p>
+    </footer>
+</body>
+</html>

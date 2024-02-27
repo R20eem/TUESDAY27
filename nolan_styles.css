@@ -1,0 +1,207 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #3d3d3a; /* IMDb's black background */
+    color: #ffffff; /* White text for general content */
+}
+
+header {
+    background-color: #000000; /* Black header to match IMDb's style */
+    color: #B3C7F7; /* IMDb's yellow for header text */
+    padding: 25px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    min-height: calc(100vh - 100px);
+}
+
+.sidebar {
+    background-color: #000000; /* Black sidebar for a cohesive look */
+    color: #ffffff; /* White text for sidebar links */
+    width: 250px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li a {
+    color: #ffffff; /* White links for readability */
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover {
+    color: #000000; /* Black text on hover */
+    background-color: #B3C7F7; /* IMDb's yellow for hover background */
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* Main page specific styles */
+#nolan-info, #website-purpose {
+    padding: 20px;
+    background-color: #B3C7F7; /* Slightly lighter black for section backgrounds */
+    margin: 20px 0;
+    color: #000000; /* White text for readability */
+    text-align: center;
+}
+
+#nolan-info h2, #website-purpose h2 {
+    color: #000000; /* IMDb's yellow for section headings */
+}
+
+#newsletter {
+    background-color: #B3C7F7; /* A vibrant color to attract attention */
+    color: #000000; /* Dark text for readability */
+    padding: 20px;
+    text-align: center;
+}
+
+#newsletter input[type="email"], #newsletter button {
+    padding: 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    background-color: #000000; /* Matching the text color for consistency */
+    color: #ffffff; /* White text for contrast */
+    cursor: pointer;
+}
+
+#newsletter button:hover {
+    background-color: #323232; /* Slightly lighter black for hover effect */
+}
+
+
+footer {
+    background-color: #000000; /* Black footer to match the overall theme */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 15px;
+}
+
+.social-media a {
+    color: #B3C7F7; /* IMDb's yellow for social media icons */
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+/* Generic movie page sections */
+.movie-poster img {
+    display: block; /* Make the image a block-level element */
+    margin: 0 auto; /* Set auto margin for left and right */
+    width: 25%; /* Adjust the width as needed */
+}
+
+.movie-info, .movie-cast {
+    background-color: #B3C7F7; /* Slightly lighter black for section backgrounds */
+    color: #ffffff; /* White text for readability */
+    padding: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.movie-info h2, .movie-cast h2 {
+    color: #000000; 
+}
+
+.movie-cast ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+}
+
+.movie-cast ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+/* Review Form Styling */
+main#form {
+    flex-grow: 1; /* Allows main content to fill available space */
+    padding: 20px; /* Padding around main content */
+}
+
+table {
+    width: 100%; /* Full width of its container */
+    border-collapse: collapse; /* Collapses table borders */
+    margin: 20px 0; /* Margin above and below the table */
+}
+
+th, td {
+    border: 1px solid #B3C7F7; /* Yellow border for cells to match IMDb's theme */
+    padding: 8px; /* Padding inside cells for text spacing */
+    text-align: center; /* Align text to the left within cells */
+}
+
+th {
+    color: #000000; /* Black background for header cells */
+    background-color: #B3C7F7; /* Yellow text for header cells for contrast */
+}
+
+tr:nth-child(even) {
+    background-color: #121212; /* Slightly lighter black for alternate rows for better readability */
+}
+
+form {
+    background-color: #121212; /* Darker gray background for form */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for form */
+    max-width: 600px; /* Max width for form */
+    margin: auto; /* Centers form in the available main content area */
+}
+
+form div {
+    margin-bottom: 15px; /* Margin between form fields */
+}
+
+form label {
+    display: block; /* Ensures labels are on their own line */
+    margin-bottom: 5px; /* Space between label and input field */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%; /* Full width inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #B3C7F7; /* Yellow border for inputs */
+    background-color: #000000; /* Black background for inputs */
+    color: #ffffff; /* White text for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+}
+
+form input[type="checkbox"] {
+    margin-right: 5px; /* Space between checkbox and label */
+}
+
+form button {
+    background-color: #B3C7F7; /* IMDb's yellow for submit button */
+    color: #000000; /* Black text on button */
+    padding: 10px 20px; /* Padding around button text */
+    border: none; /* No border for button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+    background-color: #0863ca; /* Darker yellow on hover */
+}
